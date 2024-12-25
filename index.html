@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Thailand Information Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #00247d;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            background-image: linear-gradient(45deg, #00247d, #ed1c24);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #00247d;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .card h3 {
+            color: #2b6cb0;
+            margin: 1rem 0;
+        }
+
+        .card ul {
+            list-style-position: inside;
+            padding-left: 1rem;
+        }
+
+        .card li {
+            margin: 0.5rem 0;
+        }
+
+        .fact-box {
+            background: #e2e8f0;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .highlight-box {
+            background: #fff3e0;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            border-left: 4px solid #ed1c24;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8fafc;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Thailand (ประเทศไทย)</h1>
+        <p>"Land of the Free" - The Land of Smiles</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h2>Extended Historical Timeline</h2>
+                <ul>
+                    <li>13th Century: Sukhothai Kingdom established (1238)</li>
+                    <li>14th-18th Century: Ayutthaya Kingdom period</li>
+                    <li>1782: Founding of Bangkok, beginning of Chakri Dynasty</li>
+                    <li>1851-1868: King Mongkut's modernization period</li>
+                    <li>1868-1910: King Chulalongkorn's reforms</li>
+                    <li>1932: Constitutional monarchy established</li>
+                    <li>1939: Siam renamed to Thailand</li>
+                    <li>1941-1945: World War II period</li>
+                    <li>1967: ASEAN founding member</li>
+                </ul>
+                <div class="highlight-box">
+                    <h3>Royal Traditions</h3>
+                    <ul>
+                        <li>Current Dynasty: Chakri (since 1782)</li>
+                        <li>Current King: Rama X (Maha Vajiralongkorn)</li>
+                        <li>Royal Color: Yellow (represents Monday, the King's birthday)</li>
+                        <li>Royal Anthem: Sansoen Phra Barami</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Detailed Geography</h2>
+                <h3>Regions:</h3>
+                <ul>
+                    <li>Northern: Mountainous, cooler climate</li>
+                    <li>Northeastern (Isan): Plateau, agricultural</li>
+                    <li>Central: Fertile plains, rice farming</li>
+                    <li>Eastern: Coastline, industrial</li>
+                    <li>Southern: Peninsula, tropical</li>
+                </ul>
+                <h3>Major National Parks:</h3>
+                <ul>
+                    <li>Khao Yai National Park (UNESCO site)</li>
+                    <li>Doi Inthanon National Park</li>
+                    <li>Erawan National Park</li>
+                    <li>Khao Sok National Park</li>
+                </ul>
+                <div class="fact-box">
+                    <h3>Climate Zones:</h3>
+                    <table>
+                        <tr>
+                            <th>Season</th>
+                            <th>Months</th>
+                            <th>Characteristics</th>
+                        </tr>
+                        <tr>
+                            <td>Hot</td>
+                            <td>March-May</td>
+                            <td>32-40°C</td>
+                        </tr>
+                        <tr>
+                            <td>Rainy</td>
+                            <td>June-October</td>
+                            <td>Monsoon</td>
+                        </tr>
+                        <tr>
+                            <td>Cool</td>
+                            <td>November-February</td>
+                            <td>20-30°C</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Cultural Traditions</h2>
+                <h3>Traditional Arts:</h3>
+                <ul>
+                    <li>Khon (masked dance drama)</li>
+                    <li>Muay Thai (traditional boxing)</li>
+                    <li>Thai classical music (piphat)</li>
+                    <li>Traditional painting</li>
+                    <li>Shadow puppet theater</li>
+                </ul>
+                <h3>Major Festivals:</h3>
+                <ul>
+                    <li>Songkran (Thai New Year, April)</li>
+                    <li>Loy Krathong (November)</li>
+                    <li>Yi Peng (Northern Lantern Festival)</li>
+                    <li>Phi Ta Khon (Ghost Festival)</li>
+                    <li>Vegetarian Festival (October)</li>
+                </ul>
+                <div class="highlight-box">
+                    <h3>Traditional Customs:</h3>
+                    <ul>
+                        <li>Wai (traditional greeting)</li>
+                        <li>Mai pen rai (no worries attitude)</li>
+                        <li>Spirit houses (san phra phum)</li>
+                        <li>Removing shoes before entering homes</li>
+                        <li>Respect for elders and monks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Extended Language Guide</h2>
+                <div class="fact-box">
+                    <h3>Essential Phrases:</h3>
+                    <table>
+                        <tr>
+                            <th>English</th>
+                            <th>Thai</th>
+                            <th>Pronunciation</th>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>สวัสดี</td>
+                            <td>Sa-wat-dee</td>
+                        </tr>
+                        <tr>
+                            <td>Thank you</td>
+                            <td>ขอบคุณ</td>
+                            <td>Khop-khun</td>
+                        </tr>
+                        <tr>
+                            <td>How much?</td>
+                            <td>ราคาเท่าไหร่</td>
+                            <td>Ra-ka-tao-rai</td>
+                        </tr>
+                        <tr>
+                            <td>Delicious</td>
+                            <td>อร่อย</td>
+                            <td>A-roi</td>
+                        </tr>
+                        <tr>
+                            <td>Excuse me</td>
+                            <td>ขอโทษ</td>
+                            <td>Kor-tot</td>
+                        </tr>
+                    </table>
+                </div>
+                <h3>Language Facts:</h3>
+                <ul>
+                    <li>5 tones: mid, low, falling, high, rising</li>
+                    <li>No conjugation of verbs</li>
+                    <li>No plurals</li>
+                    <li>Gender-specific particles for politeness</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Culinary Heritage</h2>
+                <h3>Regional Cuisines:</h3>
+                <ul>
+                    <li>Northern: Khao Soi, Nam Prik Ong</li>
+                    <li>Northeastern: Som Tam, Larb</li>
+                    <li>Central: Pad Thai, Tom Yum Goong</li>
+                    <li>Southern: Massaman Curry, Yellow Curry</li>
+                </ul>
+                <div class="fact-box">
+                    <h3>Essential Ingredients:</h3>
+                    <ul>
+                        <li>Herbs: Thai basil, kaffir lime, lemongrass</li>
+                        <li>Spices: Galangal, turmeric, white pepper</li>
+                        <li>Sauces: Fish sauce, oyster sauce, soy sauce</li>
+                        <li>Staples: Jasmine rice, rice noodles, coconut milk</li>
+                    </ul>
+                </div>
+                <div class="highlight-box">
+                    <h3>Dining Etiquette:</h3>
+                    <ul>
+                        <li>Use spoon and fork (no knife)</li>
+                        <li>Share dishes family-style</li>
+                        <li>Rice with every meal</li>
+                        <li>Eat slowly and socially</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Modern Thailand</h2>
+                <h3>Economic Sectors:</h3>
+                <ul>
+                    <li>Tourism (20% of GDP pre-2020)</li>
+                    <li>Manufacturing (automobiles, electronics)</li>
+                    <li>Agriculture (world's largest rice exporter)</li>
+                    <li>Digital economy (growing startup ecosystem)</li>
+                </ul>
+                <h3>Infrastructure:</h3>
+                <ul>
+                    <li>BTS Skytrain and MRT subway in Bangkok</li>
+                    <li>High-speed rail projects underway</li>
+                    <li>Modern airports (Suvarnabhumi, Don Mueang)</li>
+                    <li>Advanced healthcare system</li>
+                </ul>
+                <div class="highlight-box">
+                    <h3>Popular Culture:</h3>
+                    <ul>
+                        <li>Thai dramas (lakorn)</li>
+                        <li>Modern Thai pop music</li>
+                        <li>Contemporary art scene</li>
+                        <li>Street food culture</li>
+                        <li>Digital nomad destination</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
